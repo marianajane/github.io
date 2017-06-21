@@ -1,0 +1,34 @@
+.box-img {
+	width: 100%;
+	margin-top: 10vh;
+}
+
+.no-margin {
+	margin-top: 0;
+}
+
+
+.purple {
+	color: #726FAF;
+}
+
+.pink {
+	color: #E26FA9;
+}
+
+.green {
+	color: #71ACCD;
+}
+
+.white {
+	color: white;
+}
+
+.font-josefine {
+	font-family: 'Josefin Sans', sans-serif;
+}
+
+.work-windows {
+	width: 100%;
+}
+

@@ -1,0 +1,239 @@
+*,
+*::after,
+*::before {
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Avenir Next', Avenir, Helvetica, Arial, sans-serif;
+	background: #7F7CC3;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover,
+a:focus {
+	color: #E46EA8;
+	text-decoration: none;
+}
+
+.hidden {
+	position: absolute;
+	overflow: hidden;
+	width: 0;
+	height: 0;
+	pointer-events: none;
+}
+
+/* Icons */
+.icon {
+	display: block;
+	width: 1.5em;
+	height: 1.5em;
+	margin: 0 auto;
+	fill: currentColor;
+}
+
+.view {
+	position: relative;
+	display: flex;
+	justify-content: flex-end;
+	overflow: hidden;
+	height: 100vh;
+	margin: 0 0 0 215px;
+}
+
+.content {
+	z-index: 1;
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	height: 100%;
+	padding: 25px 50px;
+	background: url(../img/bg_lavender.jpg) no-repeat top left;
+	background-size: auto 100%;
+}
+
+.deco {
+	text-align: center;
+	margin: 0;
+	line-height: 1;
+	color: #fff;
+}
+
+.deco__text {
+	font-size: 1.2em;
+	color: #bcb8e8;
+}
+
+.deco__title {
+	font-size: 3.5em;
+	line-height: 1.5;
+}
+
+.deco__greeting{
+	font-size: 4em;
+}
+
+/* Top Navigation Style */
+
+
+.btn {
+	border: none;
+	background: none;
+}
+
+.btn:focus {
+	outline: none;
+}
+
+.btn--back {
+	font-size: 1.5em;
+	position: absolute;
+	z-index: 1002;
+	top: 1em;
+	right: 1em;
+	opacity: 0;
+	color: #1d48f3;
+}
+
+.btn--menu {
+	font-size: 0.85em;
+	position: absolute;
+	z-index: 1000;
+	top: 0;
+	left: 0;
+	display: none;
+	margin: 10px 0 0 6px;
+}
+
+.btn--menu-active .icon--menu,
+.icon--cross {
+	display: none;
+}
+
+.btn--menu-active .icon--cross {
+	display: block;
+}
+
+/* Demo links */
+.demos {
+	display: flex;
+	align-items: center;
+	margin: 2em 0 0 auto;
+}
+
+.demos__text {
+	font-size: 0.8em;
+	display: block;
+	margin: 0 2em 0 0;
+	color: #bcb8e8;
+}
+
+.demo {
+	position: relative;
+	display: block;
+	margin: 0 0 0 1.5em;
+}
+
+.demo:hover,
+.demo:focus {
+	outline: none;
+}
+
+.demo--current {
+	pointer-events: none;
+	color: #fff;
+}
+
+.demo--current::before {
+	content: '';
+	position: absolute;
+	z-index: -1;
+	top: 50%;
+	left: 50%;
+	width: 32px;
+	height: 32px;
+	margin: -17px 0 0 -16px;
+	border-radius: 50%;
+	background: #1d48f3;
+}
+/* Content */
+.tabscontent {
+	pointer-events: none;
+}
+
+.tabscontent__item {
+	position: fixed;
+	z-index: 1001;
+	top: 0;
+	left: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	overflow: hidden;
+	width: 100%;
+	height: 100vh;
+	opacity: 0;
+}
+
+.tabscontent__item--current,
+.tabscontent__item--current ~ .btn--back {
+	pointer-events: auto;
+}
+
+.poster {
+	position: relative;
+}
+
+
+.column {
+	width: 30vw;
+}
+
+.column__title {
+	color: #ff764b;
+}
+
+.column__text {
+	font-size: 2em;
+	font-weight: normal;
+	margin: 0;
+	color: #fff4d7;
+}
+
+.text {
+	z-index: 1000;
+	color: white;
+}
+
+/* Individual demos */
+.
+@media screen and (max-width: 40em) {
+	.view {
+		overflow: auto;
+		height: auto;
+		min-height: calc(100vh - 69px);
+		margin: 0;
+	}
+	
+	.content {
+		flex-direction: column;
+		padding: 10px;
+	}
+	
+	.btn--back {
+		top: 0;
+		right: 0;
+	}
+	.btn--menu {
+		display: block;
+	}
+	.box-img {
+	width: 60%;
+	margin-top: 5vh;
+	}
+}

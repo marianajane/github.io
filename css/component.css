@@ -1,0 +1,84 @@
+.tabsnav {
+	position: fixed;
+	top: 0;
+	right: 0;
+	width: 100%;
+	z-index: 1000;
+}
+
+.tabsnav--hidden {
+	pointer-events: none;
+	visibility: hidden;
+}
+
+.tabsnav__item {
+	height: 50px;
+	position: relative;
+	cursor: pointer;
+}
+
+.tabsnav__bar {
+	background: currentColor;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	pointer-events: none;
+}
+
+.tabsnav__title {
+	position: relative;
+	cursor: pointer;
+	margin: 0;
+	height: 100%;
+	font-weight: normal;
+	line-height: 1;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	pointer-events: none;
+	color: #7F7CC3;
+}
+
+/* Vertical Menu */
+.tabsnav--vertical {
+	display: flex;
+	width: auto;
+	height: 100%;
+}
+
+.tabsnav--vertical .tabsnav__item {
+	flex: none;
+	width: 80px;
+	height: 100%;
+}
+
+.tabsnav--vertical .tabsnav__title {
+	transform: rotate(-90deg);
+}
+
+/* Menu styles */
+
+.tabsnav--ander {
+	right: 0;
+}
+
+.tabsnav--ander .tabsnav__bar {
+	background: #fff;
+}
+
+.tabsnav--ander .tabsnav__item:not(:last-child) {
+	margin: 0 10px 0 0;
+}
+
+.tabsnav--ibai .tabsnav__item:not(:last-child) {
+	margin: 0 0 10px 0;
+}
+
+@media screen and (max-width: 40em) {
+	/* don't show a background if on mobile */
+	.tabsnav {
+		background: none;
+	}
+	
+}
