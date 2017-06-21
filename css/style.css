@@ -7,7 +7,6 @@
 	margin-top: 0;
 }
 
-
 .purple {
 	color: #726FAF;
 }
@@ -24,11 +23,46 @@
 	color: white;
 }
 
+.white-background {
+	background-color: white;
+}
+
+.whitesmoke {
+	background-color: whitesmoke;
+}
+
 .font-josefine {
 	font-family: 'Josefin Sans', sans-serif;
 }
 
+.font-muli {
+	font-family: 'Muli', sans-serif;
+}
+
 .work-windows {
 	width: 100%;
+}
+
+.title-space {
+	margin: 5vh;
+}
+
+.nav__colors>li {
+	margin-top: 3vh;
+	
+}
+
+.nav__colors>li>a {
+	color: #726FAF;
+}
+
+.nav__colors>li>a:hover {
+	background-color: #E26FA9;
+	color: white;
+}
+
+.about-space {
+	margin-top: 10vh; 
+	margin-bottom: 10vh;
 }
 
