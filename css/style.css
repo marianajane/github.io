@@ -11,6 +11,10 @@
 	color: #726FAF;
 }
 
+.purple-background {
+	background-color: #726FAF;
+}
+
 .pink {
 	color: #E26FA9;
 }
@@ -28,15 +32,15 @@
 }
 
 .whitesmoke {
-	background-color: whitesmoke;
+	background-color:  #f7f7f7;
 }
 
 .font-josefine {
 	font-family: 'Josefin Sans', sans-serif;
 }
 
-.font-muli {
-	font-family: 'Muli', sans-serif;
+.font-cabin {
+	font-family: 'Cabin', sans-serif;
 }
 
 .work-windows {
@@ -61,8 +65,125 @@
 	color: white;
 }
 
+
+/*Space between*/
+
 .about-space {
-	margin-top: 10vh; 
-	margin-bottom: 10vh;
+	margin-top: 5vh; 
+	margin-bottom: 6vh;
 }
 
+.about-space__above {
+	margin-top: 3vh;
+}
+
+.about-space__down {
+	margin-bottom: 5vh;
+}
+
+.btw>img {
+	margin-left: 1vh;
+}
+
+/*Social media*/
+
+.fa {
+  padding: 20px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+
+.fa-pinterest {
+  background: #cb2027;
+  color: white;
+}
+
+.fa-soundcloud {
+  background: #ff5500;
+  color: white;
+}
+
+.fa-git:hover {
+	opacity: 0.7;
+}
+
+.git {	
+  width: 55px;
+  margin: .5vh;
+}
+
+.git:hover {
+	opacity: 0.7
+}
+
+.bottom {
+	bottom: 0;
+	margin-bottom: 5vh;
+}
+
+/* Size Text */
+
+.big-text {
+	font-size: 5em;
+}
+
+.medium-plus-text {
+	font-size: 3.5em;
+}
+
+.medium-text {
+	font-size: 2.5em;
+}
+
+/* hover */
+
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #008CBA;
+}
+
+.content:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
