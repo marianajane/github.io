@@ -19,8 +19,26 @@
 	color: #E26FA9;
 }
 
+.pink-background {
+	background-color: #E26FA9;
+}
+
 .green {
 	color: #71ACCD;
+}
+
+.green-background {
+	background-color: #71ACCD;
+}
+
+.btn__green {
+	color: white;
+	background-color: #71ACCD;
+}
+
+.btn__green:hover {
+	color: white;
+	background-color: grey;
 }
 
 .white {
@@ -32,7 +50,7 @@
 }
 
 .whitesmoke {
-	background-color:  #f7f7f7;
+	background-color: #fbfafa;
 }
 
 .font-josefine {
@@ -65,6 +83,17 @@
 	color: white;
 }
 
+.shadow-purple {
+	box-shadow: 10px 10px 5px #726FAF;
+}
+
+.shadow-green {
+	box-shadow: 10px 10px 5px #71ACCD;
+}
+
+.shadow-pink {
+	box-shadow: 10px 10px 5px #E26FA9;
+}
 
 /*Space between*/
 
@@ -145,15 +174,19 @@
 }
 
 .medium-plus-text {
-	font-size: 3.5em;
+	font-size: 3em;
 }
 
 .medium-text {
-	font-size: 2.5em;
+	font-size: 2em;
+}
+
+.border-radius {
+	border: 2px solid;
+    border-radius: 25px;
 }
 
 /* hover */
-
 
 .image {
   display: block;
