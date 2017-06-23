@@ -210,30 +210,4 @@ a:focus {
 	color: white;
 }
 
-/* Individual demos */
-.
-@media screen and (max-width: 40em) {
-	.view {
-		overflow: auto;
-		height: auto;
-		min-height: calc(100vh - 69px);
-		margin: 0;
-	}
-	
-	.content {
-		flex-direction: column;
-		padding: 10px;
-	}
-	
-	.btn--back {
-		top: 0;
-		right: 0;
-	}
-	.btn--menu {
-		display: block;
-	}
-	.box-img {
-	width: 60%;
-	margin-top: 5vh;
-	}
-}
+

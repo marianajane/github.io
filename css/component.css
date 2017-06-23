@@ -75,10 +75,3 @@
 	margin: 0 0 10px 0;
 }
 
-@media screen and (max-width: 40em) {
-	/* don't show a background if on mobile */
-	.tabsnav {
-		background: none;
-	}
-	
-}

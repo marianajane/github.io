@@ -41,6 +41,14 @@
 	background-color: grey;
 }
 
+.orange {
+	color: #F3B64E;
+}
+
+.orange-background {
+	background-color: #F3B64E;
+}
+
 .white {
 	color: white;
 }
@@ -69,13 +77,9 @@
 	margin: 5vh;
 }
 
-.nav__colors>li {
-	margin-top: 3vh;
-	
-}
 
 .nav__colors>li>a {
-	color: #726FAF;
+	color: white;
 }
 
 .nav__colors>li>a:hover {
@@ -98,8 +102,8 @@
 /*Space between*/
 
 .about-space {
-	margin-top: 5vh; 
-	margin-bottom: 6vh;
+	padding-top: 6vh;
+	padding-bottom: 8vh;
 }
 
 .about-space__above {
@@ -112,6 +116,17 @@
 
 .btw>img {
 	margin-left: 1vh;
+}
+
+.square {
+	padding-top: 2vh;
+	padding-bottom: 2vh;
+
+  	cursor: pointer;
+}
+
+.square:hover {
+	background-image: url(../img/software/autocad.png);
 }
 
 /*Social media*/
@@ -188,11 +203,20 @@
 
 /* hover */
 
-.image {
-  display: block;
-  width: 100%;
-  height: auto;
+.download {
+	border-style: dotted;
+	border-width: 1px;
+	border-color: white;
+	margin-top: 1vh;
+	padding-top: 0;
 }
+
+.download:hover {
+	text-decoration: none;
+	background-color: grey;
+}
+
+/*Skills*/
 
 .overlay {
   position: absolute;
@@ -204,19 +228,28 @@
   width: 100%;
   opacity: 0;
   transition: .5s ease;
-  background-color: #008CBA;
+  background-color: #FBFAFA;
 }
 
-.content:hover .overlay {
-  opacity: 1;
+.square:hover .overlay {
+  opacity: 3;
 }
 
-.text {
-  color: white;
-  font-size: 20px;
+.image {
   position: absolute;
   top: 50%;
-  left: 50%;
+  left: 8vh;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
+}
+
+.home {
+	visibility: hidden;
+}
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    .home {
+	visibility: visible;
+	}
 }
