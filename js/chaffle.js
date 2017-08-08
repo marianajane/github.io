@@ -1,14 +1,14 @@
 $(document).ready(function(){
-	$('h1').textillate({  
+	$('h1').textillate({
     	in : {
             effect: 'tada'
         },
         out: {
-            effect: 'hinge'
+            effect: 'tada'
         },
-        loop: false,
+        loop: true,
     });
-    $('h4').textillate({  
+    $('h4').textillate({
     	in : {
             effect: 'bounceIn'
         },
@@ -17,7 +17,7 @@ $(document).ready(function(){
         },
         loop: false,
     });
-    $('p').textillate({  
+    $('p').textillate({
     	in : {
             effect: 'tada'
         },
@@ -26,5 +26,5 @@ $(document).ready(function(){
         },
         loop: true
     });
-    
+
 });
