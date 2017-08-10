@@ -192,6 +192,10 @@
 	margin-top: 0;
 }
 
+.no-padding {
+	padding: 0;
+}
+
 .orange {
 	color: #F3B64E;
 }
